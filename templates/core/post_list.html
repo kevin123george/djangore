@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1><b>Articles</b></h1>
+<ul>
+{% for article in object_list %}
+    <li>{{ article.author}} - {{ article.title }}</li>
+    <p>
+        {{article.body}}
+        <a href={{article.slug}}>read more</a>
+    </p>
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
+</body>
+</html>

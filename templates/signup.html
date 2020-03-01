@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+          <form class="form-signin" method="POST">
+              {% csrf_token %}
+              <input type="hidden" name="csrfmiddlewaretoken" value="qh1VLmL1YLmLUBk3RUrvdwtT1YKdhGztdakWOM8rX5ZvZl2VNntn7ntXEjbF5UxQ">
+                <p><label for="id_first_name">First name:</label> <input type="text" name="first_name" maxlength="60" required id="id_first_name"></p>
+<p><label for="id_last_name">Last name:</label> <input type="text" name="last_name" maxlength="60" required id="id_last_name"></p>
+<p><label for="id_username">Username:</label> <input type="text" name="username" maxlength="150" autofocus required id="id_username"> </p>
+<p><label for="id_email">Email:</label> <input type="email" name="email" required id="id_email"></p>
+<p><label for="id_password1">Password:</label> <input type="password" name="password1" autocomplete="new-password" required id="id_password1"> <span class="helptext"></span></p>
+<p><label for="id_password2">Password confirmation:</label> <input type="password" name="password2" autocomplete="new-password" required id="id_password2"> </p>
+              <input type="submit" value="Submit" >
+
+          </form>
+</body>
+</html>
